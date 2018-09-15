@@ -66,7 +66,9 @@ class View extends EventEmitter { //наследуем класс eventemitter
     // remove item from modal
   }
 
-  handleAdd(event) { //событие: добавляет задачу
+  //инициализация приложения по клику добавить задачу
+
+  handleAdd(event) { //событие: добавляет задачу 
     event.preventDefault();
 
     if (!this.input.value) return alert('Необходимо ввести название задачи'):
